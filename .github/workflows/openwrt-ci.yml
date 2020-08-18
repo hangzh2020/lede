@@ -97,11 +97,11 @@ jobs:
           # 
 
           # 编译x64固件:
-           cat >> .config <<EOF
-           CONFIG_TARGET_sunxi=y
-           CONFIG_TARGET_sunxi_cortexa7=y
-           CONFIG_TARGET_sunxi_cortexa7_Default=y
-           EOF
+          cat >> .config <<EOF
+          CONFIG_TARGET_sunxi=y
+          CONFIG_TARGET_sunxi_cortexa7=y
+          CONFIG_TARGET_MULTI_PROFILE=y
+          EOF
 
           # 固件压缩:
           # cat >> .config <<EOF
